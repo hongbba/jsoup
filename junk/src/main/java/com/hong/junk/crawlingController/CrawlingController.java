@@ -32,15 +32,18 @@ public class CrawlingController {
 			Document document = conn.get();
 			
 			//stockList에서 가져온 주소에서 class=launch-list-item을 찾는다
-			Elements e1 = document.getElementsByAttributeValue("class", "headline-5");
-			Elements e2 = document.getElementsByAttributeValue("class", "headline-3");
-			Elements e3 = document.getElementsByAttributeValue("class", "ncss-btn-primary-dark");
+//			Elements e1 = document.getElementsByAttributeValue("class", "headline-5");
+//			Elements e2 = document.getElementsByAttributeValue("class", "headline-3");
+			Elements e3 = document.getElementsByAttributeValue("class", "userestockalarm");
+//			Elements e3 = document.getElementsByAttributeValue("class", "ncss-btn-primary-dark");
 //			Elements coming = document.getElementsByAttributeValue("data-iscomingsoon", false);
 			
-			model.addAttribute("e1", e1);
-			model.addAttribute("e2", e2);
-			model.addAttribute("e3", e3);
+//			model.addAttribute("e1", e1);
+//			model.addAttribute("e2", e2);
+//			model.addAttribute("e3", e3);
 //			model.addAttribute("coming", coming);
+			
+			log.debug("====================================={}", e3);
 		} 
 		
 		catch (IOException e) {
