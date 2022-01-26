@@ -119,3 +119,6 @@ log/
 
 ### properties ###
 *.properties
+
+### firebase ###
+*.json

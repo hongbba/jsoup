@@ -275,6 +275,15 @@
 		    <version>1.14.3</version>
 		</dependency>
 				
+				
+		<!-- 푸쉬 알림 의존성 -->
+		<dependency>
+ 			<groupId>com.google.firebase</groupId>
+ 			<artifactId>firebase-admin</artifactId>
+ 			<version>7.0.1</version>
+		</dependency>
+		
+		
 	</dependencies>
 	
 	<!-- 
